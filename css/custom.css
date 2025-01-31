@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --azulMarinoOscuro: #091d36; /*estilo1*/
-    --azulMarino: #101e5a; /*estilo2*/
-    --azulMarinoClaro: #5d80b6; /*estilo3*/
-    --azulCeleste: #bfcee1; /*estilo4*/
-    --blancoRoto: #f7f8f9; /*estilo5*/
+    --azulMarinoOscuro: #6E7EB1; /*estilo1*/
+    --azulMarino: #C9D5FD; /*estilo2*/
+    --azulMarinoClaro: #EEE4FD; /*estilo3*/
+    --azulCeleste: #B6EAFF; /*estilo4*/
+    --blancoRoto: #EAF9FF; /*estilo5*/
     --negro: #000000; /*estilo6*/
-    --azulGrisaceo: #8e9092; /*estilo7*/
-    --grisClaro: #cfcfcd; /*estilo8*/
+    --azulGrisaceo: #8E9092; /*estilo7*/
+    --grisClaro: #CFCDCD; /*estilo8*/
 }
 
 /* .montserrat-<uniquifier> {
