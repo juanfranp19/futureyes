@@ -1,63 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --azulMarinoOscuro: #6E7EB1; /*estilo1*/
-    --azulMarino: #C9D5FD; /*estilo2*/
-    --azulMarinoClaro: #EEE4FD; /*estilo3*/
+    /* los colores son idstintos al de la hoja de estilos porque 
+    necesitan ser mas oscuros */
+    --azulBase: #4f67b4; /*estilo1*/
+    --azulBaseClaro: #C9D5FD; /*estilo2*/
+    --lilaBase: #ccacfc;
+    --lilaClaro: #EEE4FD; /*estilo3*/
     --azulCeleste: #B6EAFF; /*estilo4*/
-    --blancoRoto: #EAF9FF; /*estilo5*/
+    --azulCelesteClaro: #EAF9FF; /*estilo5*/
     --negro: #000000; /*estilo6*/
-    --azulGrisaceo: #8E9092; /*estilo7*/
+    --azulGrisaceo: #435a74; /*estilo7*/
     --grisClaro: #CFCDCD; /*estilo8*/
+    --azulBaseOscuro: #2b3967; /* estilo 9*/
 }
 
-/* .montserrat-<uniquifier> {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-} */
-
 h1 {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
+    font-family: "Fira Sans", serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 30px;
-    color: var(--azulMarinoOscuro);
-    text-align: center;
+    font-size: 30;
+    color: var(--azulBaseOscuro);
     padding: 50px 0px;
 }
 
 h2 {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
+    font-family: "Fira Sans", serif;
+    font-weight: 600;
     font-style: normal;
-    font-size: 20px;
-    color: var(--azulMarino);
+    font-size: 20;
+    color: var(--azulBase);
     margin: 2%;
 }
 
 h3 {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
+    font-family: "Fira Sans", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 18px;
-    color: var(--azulMarinoClaro);
+    font-size: 20;
     margin: 4%;
-    text-align: center;
 }
 
 p {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: light;
-    font-style: normal;
+    font-family: "Fira Sans", serif;
+    font-weight: 300;
     font-size: 15px;
+    font-style: normal;
     color: var(--negro);
-    text-align: center;
 }
 
 .sin {
@@ -70,18 +59,17 @@ p {
 }
 
 body {
-    /* background-color: var(--azulCeleste); */
-    background: linear-gradient(to bottom, var(--azulCeleste), var(--blancoRoto));
+    background: linear-gradient(to bottom, var(--azulBaseClaro), var(--lilaBase));
 }
 
 /* nav */
 
     .navbar {
-        background-color: var(--azulMarinoOscuro);
+        background-color: var(--lilaBase);
     }
 
     .nav-link {
-        color: var(--blancoRoto);
+        color: var(--azulBase);
         width: 100%;
         text-align: center;
     }
@@ -91,7 +79,7 @@ body {
     }
 
     .nav-link.active {
-        background-color: var(--azulCeleste);
+        background-color: var(--lilaClaro);
         color: var(--negro) !important;
         border-radius: 8px;
     }
@@ -120,28 +108,12 @@ body {
 
         .imgGafas {
             width: 100%;
-            border-radius: 10%;
         }
 
         .textoGafas {
             text-align: start;
             margin: 20px 5px 40px 5px;
             min-height: 100%;
-        }
-
-    /* accesorios */
-
-        .imgAccesorio {
-            width: 100%;
-            max-width: 600px;
-
-        }
-
-        .textoAccesorio {
-            text-align: left;
-            padding: 50px 5px 40px 5px;
-            min-height: 100%; /* para que se alinée con la foto */
-            margin-bottom: 50px;
         }
 
     /* contacto */
@@ -189,18 +161,16 @@ body {
             background-color: #BFCEE1;
         }
 
-    /* ubicación */
+    /* carrito */
 
-        .mapaUbicacion {
-            width: 100%;
-            height: 300px;
-            border: 2px solid var(--azulMarinoClaro);
+        .productosCesta {
+            min-height: 500px; /* para que el footer no se quede a media página*/
         }
 
 /* footer */
 
     .footer {
-        background-color: var(--azulMarinoOscuro);
+        background-color: var(--azulGrisaceo);
         text-align: center;
         margin-top: 35px;
         padding-top: 20px;
@@ -209,6 +179,8 @@ body {
 
     .tituloFooter {
         text-align: center;
+        margin: 0;
+        margin-top: 30px;
     }
 
     .social-icons>a {
@@ -223,6 +195,10 @@ body {
         font-size: smaller;
         color: var(--grisClaro);
         margin-top: 20px;
+    }
+
+    .footer a {
+        color: var(--lilaBase);
     }
 
 /* para cambios en tamaños a partir de sm */
@@ -245,23 +221,7 @@ body {
                 width: 100%;
                 margin: 0;
                 padding: 10px;
-            }
-
-        /* accesorios */
-
-            .imgAccesorio {
-                width: 100%;
-            }
-
-            .textoAccesorio {
-                padding: 20px 5px 40px 5px;
-            }
-
-        /* ubicación */
-
-            .mapaUbicacion {
-                height: 500px;
-                border-radius: 10px;
+                border-radius: 10%;
             }
 }
 
@@ -274,6 +234,10 @@ body {
     }
 
     /* nav */
+
+        .nav-item {
+            padding: 10px;
+        }
 
         .dropdown-menu {
             width: 55px;
@@ -305,11 +269,5 @@ body {
 
             .textoAccesorio {
                 min-height: 0;
-            }
-
-        /* ubicación */
-
-            .mapaUbicacion {
-                height: 600px;
             }
 }
