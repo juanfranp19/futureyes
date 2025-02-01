@@ -5,7 +5,6 @@
     necesitan ser mas oscuros */
     --azulBase: #4f67b4; /*estilo1*/
     --azulBaseClaro: #C9D5FD; /*estilo2*/
-    --lilaBase: #ccacfc;
     --lilaClaro: #EEE4FD; /*estilo3*/
     --azulCeleste: #B6EAFF; /*estilo4*/
     --azulCelesteClaro: #EAF9FF; /*estilo5*/
@@ -13,6 +12,7 @@
     --azulGrisaceo: #435a74; /*estilo7*/
     --grisClaro: #CFCDCD; /*estilo8*/
     --azulBaseOscuro: #2b3967; /* estilo 9*/
+    --lilaBase: #ccacfc; /* estilo 10*/
 }
 
 h1 {
