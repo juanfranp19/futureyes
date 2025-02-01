@@ -165,16 +165,16 @@ body {
             border: none;
             border-radius: 8px;
             color: white;
-            background-color: #091D36;
+            background-color: var(--azulBaseOscuro);
         }
 
         .botonFormulario:hover {
-            color: #8E9092;
+            background-color: var(--azulGrisaceo);
         }
 
         .botonFormulario:active {
-            color: #000000;
-            background-color: #BFCEE1;
+            color: var(--negro);
+            background-color: var(--azulBaseClaro);
         }
 
     /* carrito */
