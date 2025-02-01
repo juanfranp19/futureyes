@@ -110,6 +110,21 @@ body {
             width: 100%;
         }
 
+        .gafasColores {
+            width: 50%;
+            margin: 10px 0px 10px 20px;
+        }
+
+        .gafasColores2 {
+            width: 25%;
+            margin: 10px 0px 10px 20px;
+        }
+
+        .gafasColores3 {
+            width: 38%;
+            margin: 10px 0px 10px 20px;
+        }
+
         .textoGafas {
             text-align: start;
             margin: 20px 5px 40px 5px;
