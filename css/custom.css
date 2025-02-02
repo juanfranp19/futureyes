@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    /* los colores son idstintos al de la hoja de estilos porque 
-    necesitan ser mas oscuros */
     --azulBase: #4f67b4; /*estilo1*/
     --azulBaseClaro: #C9D5FD; /*estilo2*/
     --lilaClaro: #EEE4FD; /*estilo3*/
@@ -13,6 +11,7 @@
     --grisClaro: #CFCDCD; /*estilo8*/
     --azulBaseOscuro: #2b3967; /* estilo 9*/
     --lilaBase: #ccacfc; /* estilo 10*/
+    --blanco: #ffffff; /* estilo 11*/
 }
 
 h1 {
@@ -169,7 +168,7 @@ body {
             height: 35px;
             border: none;
             border-radius: 8px;
-            color: white;
+            color: var(--blanco);
             background-color: var(--azulBaseOscuro);
         }
 
@@ -277,7 +276,6 @@ body {
             .imgGafas {
                 width: 100%;
                 max-width: 500px;
-                /* padding: 5% 10%; */
             }
             
         /* accesorios */
